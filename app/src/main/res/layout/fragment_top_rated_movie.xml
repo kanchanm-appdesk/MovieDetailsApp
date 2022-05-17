@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.TopRatedMovie">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/movieTopRatedToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_700"
+                app:title="Movie Details"
+                app:titleTextColor="@color/white">
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/movie_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/movieTopRatedToolbar"
+                tools:listitem="@layout/fragment_list_view_movie" />
+
+        </RelativeLayout>
+
+</layout>
